@@ -6,6 +6,9 @@ if (window.location.hash) {
   torrentHash = window.location.hash.substring(1)
 }
 
+var initialMsg = 'loading torrent ' + torrentHash + '...';
+document.getElementById('torrent-content').innerHTML = initialMsg;
+
 var torrentId = 'magnet:?xt=urn:btih:' + torrentHash;
 
 client.add(torrentId, function (torrent) {
