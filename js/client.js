@@ -1,6 +1,6 @@
 var client = new WebTorrent()
 
-var torrentHash = 'e132c405b9ba376e61e63fbdbff4f98a26d48b1b';
+var torrentHash = '7da802b34a7287b1bd8910f688e02a26ecf60a9c';
 
 if (window.location.hash) {
   torrentHash = window.location.hash.substring(1)
