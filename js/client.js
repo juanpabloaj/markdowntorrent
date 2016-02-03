@@ -1,6 +1,6 @@
 var client = new WebTorrent()
 
-var torrentHash = '7da802b34a7287b1bd8910f688e02a26ecf60a9c';
+var torrentHash = 'ca399aac0d619354116f7180fd3ac644';
 
 if (window.location.hash) {
   torrentHash = window.location.hash.substring(1)
@@ -9,7 +9,7 @@ if (window.location.hash) {
 var initialMsg = 'loading torrent ' + torrentHash + '...';
 document.getElementById('torrent-content').innerHTML = initialMsg;
 
-var torrentId = 'magnet:?xt=urn:btih:' + torrentHash;
+var torrentId = 'https://peerify.btorrent.xyz/torrents/' + torrentHash + '.torrent'
 
 client.add(torrentId, function (torrent) {
 
